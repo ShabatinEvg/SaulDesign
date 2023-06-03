@@ -33,6 +33,8 @@ body {
     }
 }
 
+.page__main {}
+
 /*------------------------------------------------------------------*/
 [class*="__container"] {
     max-width: 1280px;
@@ -43,6 +45,122 @@ body {
 
 /*------------------------------------------------------------------*/
 
+.main {
+    padding-top: 93px;
+    padding-bottom: 98px;
+    border-bottom: 1px solid rgba(238, 238, 238, 0.1);
+}
+
+.main__container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.main__content {
+    flex: 1 1 auto;
+    padding-right: 20px;
+}
+
+.main__title {
+    font-weight: 700;
+    font-size: 96px;
+    text-transform: uppercase;
+    color: #eeeeee;
+}
+
+.main__title span {
+    color: #00ADB5;
+}
+
+.main__title:not(:last-child) {
+    margin-bottom: 48px;
+}
+
+.main__buttons {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.main__hire-button {}
+
+.button {}
+
+.main__cv-button {}
+
+.main__cv-button span {
+    padding-right: 34px;
+    display: inline-block;
+    background: url('/img/icons/download.svg') right no-repeat;
+}
+
+.button_dark {}
+
+.main__image {
+    flex: 0 0 42.8%;
+    text-align: center;
+}
+
+.main__image img {
+    max-width: 100%;
+}
+
+@media (max-width: 1280px) {
+    .main {
+        padding-top: 50px;
+        padding-bottom: 45px;
+    }
+
+    .main__container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .main__content {
+        padding-right: 0px;
+    }
+
+    .main__title {
+        text-align: center;
+    }
+
+    .main__image {
+        flex: 0 0 auto;
+    }
+
+    .main__buttons {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .main__title {
+        font-size: 65px;
+    }
+
+    .main__title:not(:last-child) {
+        margin-bottom: 25px;
+    }
+
+    .main {
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+}
+
+@media (max-width: 479.98px) {
+    .main__title {
+        font-size: 45px;
+    }
+
+    .main__buttons {
+        gap: 10px;
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
 
 /*------------------------------------------------------------------*/
 
