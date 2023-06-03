@@ -1,10 +1,16 @@
+/*--RESET STYLE---*/
 @import url("reset.css");
+/*--HEADER STYLE---*/
+@import url("header.css");
+/*--FOOTER STYLE---*/
+@import url("footer.css");
 
 /*------------------------------------------------------------------*/
 body {
-    font-family: "Poppins";
-    font-weight: 300;
-    color: #9C9C9C;
+    font-family: "Poppins", "Helvetica Neua", Helvetica, sans-serif;
+    background-color: #222831;
+    font-size: 18px;
+    color: rgba(238, 238, 238, 0.75);
 }
 
 .wrapper {
@@ -14,17 +20,20 @@ body {
     overflow: clip;
 }
 
-/*------------------------------------------------------------------*/
-[class*="__container"] {
-    max-width: 1310px;
-    margin: 0 auto;
-    padding: 0px 15px;
-}
-
-/*------------------------------------------------------------------*/
 .page {
     flex: 1 1 auto;
 }
+
+/*------------------------------------------------------------------*/
+[class*="__container"] {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/*------------------------------------------------------------------*/
+
 
 /*------------------------------------------------------------------*/
 
