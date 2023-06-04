@@ -41,7 +41,8 @@
     background-color: rgba(57, 62, 70, 0.75);
 }
 
-.button_dark:hover {
+.button_dark:hover,
+.button_dark.active {
     background-color: #00ADB5;
 }
 
